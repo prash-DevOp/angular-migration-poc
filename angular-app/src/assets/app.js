@@ -1,6 +1,11 @@
 var app = angular.module('pocApp', []);
-console.log('AngularJS module pocApp loaded:', app);
-
-app.controller('ListController', function ($scope) {
-    $scope.items = ['Item 1', 'Item 2', 'Item 3'];
+/* Pre-migration
+app.service('ItemService', function () {
+    this.getItems = function () {
+        return ['Item 1', 'Item 2', 'Item 3'];
+    };
+});
+*/
+app.controller('ListController', function (ItemService) {
+    this.items = ItemService.getItems();
 });

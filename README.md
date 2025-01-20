@@ -67,6 +67,26 @@ This project documents the step-by-step process of migrating an AngularJS applic
 
 ---
 
+### Step 5: Migrate an AngularJS Service to Angular
+
+#### What We Did:
+
+- Migrated the `ItemService` from AngularJS to Angular.
+
+- Recreated the service in Angular using `@Injectable`.
+
+- Downgraded the Angular service using `downgradeInjectable` to make it accessible in AngularJS.
+
+#### Importance:
+- Demonstrates how to safely migrate services while ensuring compatibility in the hybrid app.
+
+- Paves the way for migrating additional services without disrupting existing functionality.
+
+#### Alignment with Migration Guides:
+- Matches the "Migrating AngularJS Services" section by showing how to migrate services incrementally.
+
+---
+
 ## How This Aligns with the Bigger Picture
 
 ### Incremental Migration:
@@ -87,8 +107,8 @@ This project documents the step-by-step process of migrating an AngularJS applic
 2. Set up the Angular project.
 3. Configured hybrid integration.
 4. Migrated one AngularJS component to Angular.
+5. Migrated one AngularJS service to Angular.
 
 ### Remaining:
-1. Migrate AngularJS services to Angular.
-2. Finalize migration by removing AngularJS dependencies and testing.
+1. Finalize migration by removing AngularJS dependencies and testing.
 

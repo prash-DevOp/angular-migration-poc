@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="pocApp">
+<head>
+  <title>AngularJS POC</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body>
+  <div ng-controller="ListController">
+    <h1>Items</h1>
+    <ul>
+      <li ng-repeat="item in items">{{ item }}</li>
+    </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

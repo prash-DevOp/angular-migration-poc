@@ -52,6 +52,21 @@ This project documents the step-by-step process of migrating an AngularJS applic
 
 ---
 
+### Step 4: Migrate One AngularJS Component to Angular
+#### What We Did:
+- Created an Angular `ItemListComponent` to replace the AngularJS list component.
+- Used `downgradeComponent` to make the Angular component usable in AngularJS templates.
+- Resolved conflicts in hybrid bootstrapping.
+
+#### Importance:
+- Demonstrates a successful component migration while maintaining hybrid functionality.
+- Shows how to use Angular components in AngularJS templates, paving the way for further migration
+
+#### Alignment with Migration Guides:
+- Reflects the "Upgrade AngularJS Components" step, focusing on migrating components incrementally.
+
+---
+
 ## How This Aligns with the Bigger Picture
 
 ### Incremental Migration:
@@ -71,20 +86,9 @@ This project documents the step-by-step process of migrating an AngularJS applic
 1. Set up the AngularJS app.
 2. Set up the Angular project.
 3. Configured hybrid integration.
+4. Migrated one AngularJS component to Angular.
 
 ### Remaining:
-1. Migrate AngularJS components to Angular.
-2. Migrate AngularJS services to Angular.
-3. Finalize migration by removing AngularJS dependencies and testing.
+1. Migrate AngularJS services to Angular.
+2. Finalize migration by removing AngularJS dependencies and testing.
 
----
-
-## Bigger Picture
-This process aligns with:
-- **PhoneCat Upgrade Tutorial**
-- **Official Angular Migration Guide**
-
-### Focus Areas:
-1. Preparing a strong base.
-2. Creating a hybrid app for safe migration.
-3. Gradually migrating components and services without disrupting functionality.

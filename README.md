@@ -87,6 +87,24 @@ This project documents the step-by-step process of migrating an AngularJS applic
 
 ---
 
+### Step 6: Migrate an AngularJS Service to Angular
+
+#### What We Did:
+
+- Removed all AngularJS components, services, and dependencies.
+
+- Deleted `app.js` and all references to AngularJS in `index.html`.
+
+- Updated `AppModule` to bootstrap the Angular `ItemListComponent` directly.
+
+#### Importance:
+- Completes the migration, making the app fully Angular without any AngularJS dependencies.
+
+#### Alignment with Migration Guides:
+- Matches the "Completing the Migration" section, focusing on removing AngularJS and finalizing the transition.
+
+---
+
 ## How This Aligns with the Bigger Picture
 
 ### Incremental Migration:
@@ -98,6 +116,8 @@ This project documents the step-by-step process of migrating an AngularJS applic
 ### Hybrid Approach Benefits:
 - Allows developers to test Angular features in a controlled environment while still relying on existing AngularJS components.
 
+### Final Transition:
+- The removal of AngularJS marks the completion of the migration, leaving a modern Angular app ready for scaling and improvements.
 ---
 
 ## Steps Completed vs. Remaining
@@ -108,7 +128,7 @@ This project documents the step-by-step process of migrating an AngularJS applic
 3. Configured hybrid integration.
 4. Migrated one AngularJS component to Angular.
 5. Migrated one AngularJS service to Angular.
+6. Finalize migration by removing AngularJS dependencies and testing.
 
-### Remaining:
-1. Finalize migration by removing AngularJS dependencies and testing.
-
+## References
+- Based on the official Angular migration guide: [Angular Upgrade Guide](https://v17.angular.io/guide/upgrade).
